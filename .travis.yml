@@ -5,3 +5,5 @@ python:
 
 script:
   - python setup.py install
+
+deploy: true
