@@ -14,7 +14,6 @@ cache:
 install:
   - pip install pip --upgrade
   - pip install -r requirements/develop.txt
-  - pip install -e .
 
 # command to run tests
 script: python setup.py test
