@@ -6,7 +6,7 @@ python:
 # command to install dependencies
 before_install:
   - mkdir $HOME/.aws
-  - cp ./tests/config $HOME/.aws
+#  - cp ./tests/config $HOME/.aws
 
 cache:
   directories:
