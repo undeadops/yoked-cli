@@ -3,7 +3,18 @@ language: python
 python:
   - 2.7
 
-script:
-  - python setup.py install
+# command to install dependencies
+before_install:
+  - mkdir $HOME/.aws
+  - cp ./tests/config $HOME/.aws
 
-deploy: true
+cache:
+  directories:
+    - $HOME/.cache/pip
+install:
+  - pip install pip --upgrade
+  - pip install -r requirements/develop.txt
+  - pip install -e .
+
+# command to run tests
+script: python setup.py test
