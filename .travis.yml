@@ -8,9 +8,6 @@ before_install:
   - mkdir $HOME/.aws
 #  - cp ./tests/config $HOME/.aws
 
-cache:
-  directories:
-    - $HOME/.cache/pip
 install:
   - pip install pip --upgrade
   - pip install -r requirements/develop.txt
