@@ -6,5 +6,5 @@ def test_help():
     assert 1
 
 def test_version():
-    """ Print CLI Version ""
+    """ Print CLI Version """
     assert 1
