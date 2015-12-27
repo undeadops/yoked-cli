@@ -1,6 +1,6 @@
 import requests
 import json
-from .cli import __version__
+from . import __version__
 from . import config
 
 class API:

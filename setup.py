@@ -2,12 +2,9 @@
 import re
 import os
 from setuptools import setup
+from yokedclient import __version__
 
-
-version = re.search(
-    r'__version__\s*=\s*"(.*)"',
-    open('yokedclient/cli.py').read()
-    ).group(1)
+version = __version__
 
 if not version:
     raise RuntimeError('Cannot find version information')
@@ -35,6 +32,6 @@ setup(name='yoked-client',
       entry_points = {
           'console_scripts': ['yokedctl = yokedclient.cli:main'],
           },
-      test_suite='tests',
+      setup_requires=["pytest-runner"],
       tests_require=test_requirements
       )

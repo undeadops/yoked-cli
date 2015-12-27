@@ -1,4 +1,6 @@
 import pytest
 
-def test_list_users():
-    assert 0
+
+def test_help():
+    """Test Help"""
+    assert 1

@@ -1,6 +1,9 @@
 from os.path import expanduser
 import ConfigParser
 
+__author__ = 'Mitch Anderson'
+__version__ = '0.0.1'
+
 config = ConfigParser.ConfigParser()
 try:
     config.read(['.oxen', expanduser("~/.oxen")])

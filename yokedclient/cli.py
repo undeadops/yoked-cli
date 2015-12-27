@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-
-__version__ = "0.1"
-
 import sys
 import argparse
 import pprint
