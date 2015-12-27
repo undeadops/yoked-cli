@@ -9,9 +9,6 @@ version = __version__
 if not version:
     raise RuntimeError('Cannot find version information')
 
-with open("README.rst", "rb") as f:
-    long_descr = f.read().decode("utf-8")
-
 with open('requirements/common.txt') as f:
     requirements = [r.strip() for r in f.readlines()]
 
