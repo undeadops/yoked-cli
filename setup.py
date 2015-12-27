@@ -18,7 +18,7 @@ with open('requirements/test.txt') as f:
 setup(name='yoked-client',
       version=version,
       description='SSH Key Managment Configuration Tool',
-      long_description=long_descr,
+      long_description=open('README.md').read(),
       url='https://github.com/metarx/yoked',
       author='Mitch Anderson',
       author_email='mitch@metauser.net',
